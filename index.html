@@ -55,15 +55,15 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Academic</a></li>
-              <li class="dropdown"><a href="#"><span>Apps</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="#academic">Academic</a></li>
+              <li class="dropdown"><a href="#apps"><span>Apps</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Web Apps</a></li>
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Extensions</a></li> 				  
+                  <li><a href="#websites">Web Apps</a></li>
+                  <li><a href="#apps">Mobile</a></li>
+                  <li><a href="#apps">Extensions</a></li> 				  
                 </ul>
               </li>
-              <li><a href="#">Websites</a></li>              
+              <li><a href="#websites">Websites</a></li>              
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
@@ -429,15 +429,15 @@
 
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-academic">Academic</li>
-        <li data-filter=".filter-websites">Websites</li>
-        <li data-filter=".filter-apps">Apps</li>
+        <li id= "academic" data-filter=".filter-academic">Academic</li>
+        <li id= "websites" data-filter=".filter-websites">Websites</li>
+        <li id= "apps" data-filter=".filter-apps">Apps</li>
       </ul><!-- End Portfolio Filters -->
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
         <!-- Academic Projects -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-academic">
+        <div   class="col-lg-4 col-md-6 portfolio-item isotope-item filter-academic">
           <img src="assets/img/portfolio/drone-cybersecurity.jpg" alt="" class="img-fluid">
           <div class="portfolio-info">
             <h4><a href="#" class="portfolio-link">Cyberattack Detection in Drone Networks</a></h4>
