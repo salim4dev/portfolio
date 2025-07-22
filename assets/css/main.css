@@ -1709,3 +1709,11 @@ section,
 .portfolio-info a:hover {
   color: #ffd700; /* jaune or au survol */
 }
+/* style pour icones gthb linkdn*/
+.header .social-links a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.header .social-links a:hover {
+  color: #00d0ff; /* Bleu Bootstrap #0d6efd */
+}
