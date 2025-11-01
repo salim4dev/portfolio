@@ -434,6 +434,7 @@
 	
 	
 	
+		
 	<!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section">
 
@@ -449,61 +450,169 @@
 
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All</li>
-        <li id= "academic" data-filter=".filter-academic">Academic</li>
-        <li id= "websites" data-filter=".filter-websites">Websites</li>
-        <li id= "apps" data-filter=".filter-apps">Apps</li>
+		<li data-filter=".filter-CyberSecurity">CyberSecurity</li>
+        <li id= "academic" data-filter=".filter-Networks">Networks</li>
+        <li id= "websites" data-filter=".filter-websites">Websites</li> 
+        <li id= "apps" data-filter=".filter-apps">Applications</li>
+		 <li data-filter=".filter-IoT">IoT</li>
+		 <li data-filter=".filter-AI">AI</li>
+		 <li data-filter=".filter-ComputerVision">ComputerVision</li>
+		
+         
       </ul><!-- End Portfolio Filters -->
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <!-- Academic Projects -->
-        <div   class="col-lg-4 col-md-6 portfolio-item isotope-item filter-academic">
-          <img src="assets/img/portfolio/drone-cybersecurity.jpg" alt="" class="img-fluid">
+	  
+	  
+	  
+	  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
+          <img src="assets/img/portfolio/personalblog1.PNG" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">Cyberattack Detection in Drone Networks</a></h4>
+            <h4><a href="#" class="portfolio-link">My Personal Website</a></h4>
+            <p>A modern React + Tailwind personal website showcasing my tech projects, free learning resources, and live Tech News.</p>
+          </div>
+        </div>
+		
+		 <!-- Academic Projects -->
+        <div   class="col-lg-4 col-md-6 portfolio-item isotope-item filter-CyberSecurity filter-Networks">
+          <img src="assets/img/portfolio/dronecyber.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Cyberattack Detection in Drone Networks</a></h4>
             <p>Development of real-time intrusion detection algorithms for UAV communication networks.</p>
           </div>
         </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-CyberSecurity">
+          <img src="assets/img/portfolio/aimitmdetection.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">MITM AI Classification</a></h4>
+            <p>An AI-powered MITM traffic classification project built and trained on Google Colab, leveraging machine learning to detect and categorize network attacks with high accuracy.</p>
+          </div>
+        </div>
+		
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-CyberSecurity">
+          <img src="assets/img/portfolio/aiurlphishing.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">PhishingURL_AI_Detection</a></h4>
+            <p>A machine-learning phishing-URL detector (trained in Google Colab) that analyzes URL features and metadata to flag malicious links with confidence scores and an easy-to-integrate API</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Networks ">
+          <img src="assets/img/portfolio/aws1.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Secure Cloud Infrastructure Deployment on AWS</a></h4>
+            <p>Deployed a secure AWS cloud environment with VPC networking, EC2 instances (Apache/Nginx, MySQL, PHP), SSH hardening, S3 storage for backups, and CloudWatch log monitoring.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item  filter-IoT filter-Networks">
+          <img src="assets/img/portfolio/smarthome.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Smart Home IoT project with ESP32</a></h4>
+            <p>A smart home IoT project powered by ESP32, enabling real-time control and monitoring of connected devices through a secure and responsive interface.</p>
+          </div>
+        </div>
+		
+		 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
+          <img src="assets/img/portfolio/stegano-encrypt-app.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Steganography & Encryption App</a></h4>
+            <p>An app for securely hiding and encrypting images or files using password protection.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/age1.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">AI Model for Age Estimation</a></h4>
+            <p>A deep learning project trained on Google Colab that predicts a person’s age from facial images using convolutional neural networks for accurate and efficient estimation.</p>
+          </div>
+        </div>
+		
+		 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
+          <img src="assets/img/portfolio/tech-blog.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Personal Tech News Blog</a></h4>
+            <p>A personal blog to share technology news, tutorials, and cybersecurity trends.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-IoT filter-ComputerVision">
+          <img src="assets/img/portfolio/iotvehicledash.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">IoT-based ESP32 vehicle</a></h4>
+            <p>An IoT-based ESP32 vehicle monitoring system featuring a real-time dashboard for tracking sensor data, performance metrics, and remote vehicle control.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/gamecontrol1.gif" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">HandGesture Controled Game</a></h4>
+            <p>A hand-gesture–controlled game built with Python and Processing that uses real-time gesture recognition to drive immersive, intuitive gameplay</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Networks filter-CyberSecurity">
+          <img src="assets/img/portfolio/securenetwork1.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Design of a Secure Corporate Network using Cisco Packet Tracer</a></h4>
+            <p>A secure network architecture featuring segmentation, routing, and addressing, with a fully configured DMZ and ACL-based traffic filtering. The project also implements secure remote access via IPsec VPN tunnels.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
+          <img src="assets/img/portfolio/taskmanager.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">Fullstack Task Management app with React & Node.js</a></h4>
+            <p>Secure task management tool built with TypeScript, designed for teams and personal productivity.</p>
+          </div>
+        </div>
+		
+		
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/objdetect2.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">YOLOv8 Object Detection</a></h4>
+            <p>A YOLOv8-based object detection project that leverages deep learning to accurately identify and track multiple objects in real time from images or video streams.</p>
+          </div>
+        </div>
+		
+		
+		
 
         <!-- Websites Projects -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
           <img src="assets/img/portfolio/3d-solutions.jpg" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">3D Solutions Website</a></h4>
+            <h4><a href="#" class="portfolio-link">3D Solutions Website</a></h4>
             <p>Corporate website for a company specializing in 3D design, modeling, and printing services.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
-          <img src="assets/img/portfolio/tech-blog.jpg" alt="" class="img-fluid">
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps filter-CyberSecurity">
+          <img src="assets/img/portfolio/secure-messenger-app.PNG" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://hightechmag2.blogspot.com/" class="portfolio-link">Personal Tech News Blog</a></h4>
-            <p>A personal blog to share technology news, tutorials, and cybersecurity trends.</p>
+            <h4><a href="#" class="portfolio-link">End-to-End Encrypted Messenger</a></h4>
+            <p>A secure messaging application offering end-to-end encryption and advanced privacy controls.</p>
           </div>
         </div>
-
-		  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
-          <img src="assets/img/portfolio/taskmanager.PNG" alt="" class="img-fluid">
-          <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">Fullstack Task Management app with React & Node.js</a></h4>
-            <p>Secure task management tool built with TypeScript, designed for teams and personal productivity.</p>
-          </div>
-        </div>
-
-
-		  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
-          <img src="assets/img/portfolio/memoryflip.PNG" alt="" class="img-fluid">
-          <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">🎮 Memory Flip Game</a></h4>
-            <p>A fun and colorful memory card game built with React Native and Expo.</p>
-          </div>
-        </div>
-		  
+       
+		
+		
+		
+		
+		
+		
+		
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-websites">
           <img src="assets/img/portfolio/ecommerce-site.jpg" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">E-commerce Website</a></h4>
+            <h4><a href="#" class="portfolio-link">E-commerce Website</a></h4>
             <p>Design and development of a complete online shop with product management and secure checkout.</p>
           </div>
         </div>
@@ -512,42 +621,74 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
           <img src="assets/img/portfolio/noteseverywhere-app.jpg" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">NotesEveryWhere App</a></h4>
-            <p>An offline note-taking application with advanced backup and encryption options.</p>
+            <h4><a href="#" class="portfolio-link">NotesEveryWhere App</a></h4>
+            <p>A full-stack note-taking application featuring a RESTful API connected to a MySQL database, with secure cloud-style backup and synchronization to access notes anywhere, anytime.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
-          <img src="assets/img/portfolio/form-autofill-extension.png" alt="" class="img-fluid">
+          <img src="assets/img/portfolio/form-autofill-extension.PNG" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">Form Autofill Extension</a></h4>
+            <h4><a href="#" class="portfolio-link">SecureFill Extension</a></h4>
             <p>A browser extension to securely auto-complete forms using encrypted templates.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
-          <img src="assets/img/portfolio/stegano-encrypt-app.png" alt="" class="img-fluid">
-          <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">Steganography & Encryption App</a></h4>
-            <p>An app for securely hiding and encrypting images or files using password protection.</p>
-          </div>
-        </div>
+       
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
-          <img src="assets/img/portfolio/secure-messenger-app.png" alt="" class="img-fluid">
-          <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">End-to-End Encrypted Messenger</a></h4>
-            <p>A secure messaging application offering end-to-end encryption and advanced privacy controls.</p>
-          </div>
-        </div>
+        
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
           <img src="assets/img/portfolio/iot-control-app.jpg" alt="" class="img-fluid">
           <div class="portfolio-info">
-            <h4><a href="https://github.com/salim4dev" class="portfolio-link">Embedded IoT Control App</a></h4>
+            <h4><a href="#" class="portfolio-link">Embedded IoT Control App</a></h4>
             <p>A mobile app to control embedded systems via WiFi and Bluetooth connections.</p>
           </div>
         </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/ocr.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">AI Handwriting OCR</a></h4>
+            <p>A deep learning project that converts handwritten text into digital form using OCR models trained on Google Colab for fast and accurate handwriting recognition.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/objtrack1.gif" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">AI Object Tracking System</a></h4>
+            <p>An object tracking project designed in PyCharm with OpenCV, optimized for Raspberry Pi and ESP32 setups to detect and follow moving objects in real-time video streams.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-apps">
+          <img src="assets/img/portfolio/memoryflip.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link"> Memory Flip Game (Android)</a></h4>
+            <p>A fun and colorful memory card game built with React Native and Expo.</p>
+          </div>
+        </div>
+		
+		
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/facedetect1.jpg" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">AI Face Detection</a></h4>
+            <p>A lightweight face detection system developed in PyCharm using OpenCV, perfectly suited for Raspberry Pi and ESP32 cameras, enabling real-time recognition and automation features.</p>
+          </div>
+        </div>
+		
+		<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AI filter-ComputerVision">
+          <img src="assets/img/portfolio/colordetect1.PNG" alt="" class="img-fluid">
+          <div class="portfolio-info">
+            <h4><a href="#" class="portfolio-link">AI Color Detector</a></h4>
+            <p>A real-time color detection tool built with Python in PyCharm, ideal for Raspberry Pi or ESP32 integration, identifying and displaying colors from live camera feeds or images.</p>
+          </div>
+        </div>
+		
+		
 
       </div><!-- End Portfolio Container -->
 
