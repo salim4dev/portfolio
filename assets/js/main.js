@@ -104,6 +104,11 @@
 
   /**
    * Init typed.js
+    /* default parameters
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+      */
    */
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
@@ -112,9 +117,10 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1000
+     
     });
   }
 
