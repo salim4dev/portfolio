@@ -104,11 +104,11 @@
 
   /**
    * Init typed.js
-    /* default parameters
+     default parameters
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000
-      */
+    
    */
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
