@@ -153,38 +153,79 @@
     selector: '.glightbox'
   });
 
+
+
+
+
+
+
+
+
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+ /**
+ * Init isotope layout and filters
+ */
+document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
 
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort
-      });
-    });
+  let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+  let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+  let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
-        initIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        if (typeof aosInit === 'function') {
-          aosInit();
-        }
-      }, false);
+  // Support both the original DevFolio container
+  // and the custom portfolio container.
+  let isotopeContainer = isotopeItem.querySelector('.isotope-container, .portfolio-container');
+
+  if (!isotopeContainer) return;
+
+  let initIsotope;
+
+  imagesLoaded(isotopeContainer, function() {
+
+    initIsotope = new Isotope(isotopeContainer, {
+      itemSelector: '.isotope-item',
+      layoutMode: layout,
+      filter: filter,
+      sortBy: sort
     });
 
   });
+
+  isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+
+    filters.addEventListener('click', function() {
+
+      let activeFilter = isotopeItem.querySelector('.isotope-filters .filter-active');
+
+      if (activeFilter) {
+        activeFilter.classList.remove('filter-active');
+      }
+
+      this.classList.add('filter-active');
+
+      if (initIsotope) {
+        initIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }
+
+      if (typeof aosInit === 'function') {
+        aosInit();
+      }
+
+    }, false);
+
+  });
+
+});
+
+
+
+
+
+
+
 
   /**
    * Frequently Asked Questions Toggle
